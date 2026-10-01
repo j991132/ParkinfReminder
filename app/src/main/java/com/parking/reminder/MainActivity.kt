@@ -78,6 +78,13 @@ class MainActivity : AppCompatActivity() {
         handleWidgetIntent(intent)
     }
 
+    override fun onResume() {
+        super.onResume()
+        if (::preferences.isInitialized && ::binding.isInitialized) {
+            updateTtsToggleIcon()
+        }
+    }
+
     private fun handleWidgetIntent(intent: Intent?) {
         if (intent?.getBooleanExtra(ParkingWidgetProvider.EXTRA_OPEN_SAVE, false) == true) {
             binding.etPillar.requestFocus()

@@ -4,8 +4,8 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\item_parking_history.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-mergeDebugResources-48:\\layout\\spinner_item.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\spinner_item.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-mergeDebugResources-48:\\layout\\widget_parking_1x2.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\widget_parking_1x2.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-mergeDebugResources-48:\\layout\\dialog_family_share.xml",
@@ -16,6 +16,18 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\spinner_dropdown_item.xml"
     },
     {
+        "merged": "com.parking.reminder.app-mergeDebugResources-48:/layout/widget_parking_2x1.xml",
+        "source": "com.parking.reminder.app-main-51:/layout/widget_parking_2x1.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-mergeDebugResources-48:\\layout\\dialog_edit_parking.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\dialog_edit_parking.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-mergeDebugResources-48:\\layout\\spinner_item.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\spinner_item.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-mergeDebugResources-48:\\layout\\widget_parking.xml",
         "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\widget_parking.xml"
     },
@@ -24,15 +36,19 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-mergeDebugResources-48:\\layout\\widget_parking_2x1.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\widget_parking_2x1.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-mergeDebugResources-48:\\layout\\activity_voice_input.xml",
         "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\activity_voice_input.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-mergeDebugResources-48:\\layout\\dialog_edit_parking.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\dialog_edit_parking.xml"
+        "merged": "com.parking.reminder.app-mergeDebugResources-48:/layout/widget_parking.xml",
+        "source": "com.parking.reminder.app-main-51:/layout/widget_parking.xml"
     },
     {
-        "merged": "com.parking.reminder.app-mergeDebugResources-48:/layout/activity_main.xml",
-        "source": "com.parking.reminder.app-main-51:/layout/activity_main.xml"
+        "merged": "com.parking.reminder.app-mergeDebugResources-48:/layout/widget_parking_1x2.xml",
+        "source": "com.parking.reminder.app-main-51:/layout/widget_parking_1x2.xml"
     }
 ]

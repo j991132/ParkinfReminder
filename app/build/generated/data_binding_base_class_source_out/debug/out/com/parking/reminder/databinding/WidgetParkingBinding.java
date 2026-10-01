@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -27,6 +28,9 @@ public final class WidgetParkingBinding implements ViewBinding {
   public final Button btnWidgetSave;
 
   @NonNull
+  public final ImageView btnWidgetTtsToggle;
+
+  @NonNull
   public final Button btnWidgetVoice;
 
   @NonNull
@@ -39,12 +43,13 @@ public final class WidgetParkingBinding implements ViewBinding {
   public final LinearLayout widgetContainer;
 
   private WidgetParkingBinding(@NonNull LinearLayout rootView, @NonNull Button btnWidgetFind,
-      @NonNull Button btnWidgetSave, @NonNull Button btnWidgetVoice,
-      @NonNull TextView tvWidgetLocation, @NonNull TextView tvWidgetUpdateTime,
-      @NonNull LinearLayout widgetContainer) {
+      @NonNull Button btnWidgetSave, @NonNull ImageView btnWidgetTtsToggle,
+      @NonNull Button btnWidgetVoice, @NonNull TextView tvWidgetLocation,
+      @NonNull TextView tvWidgetUpdateTime, @NonNull LinearLayout widgetContainer) {
     this.rootView = rootView;
     this.btnWidgetFind = btnWidgetFind;
     this.btnWidgetSave = btnWidgetSave;
+    this.btnWidgetTtsToggle = btnWidgetTtsToggle;
     this.btnWidgetVoice = btnWidgetVoice;
     this.tvWidgetLocation = tvWidgetLocation;
     this.tvWidgetUpdateTime = tvWidgetUpdateTime;
@@ -90,6 +95,12 @@ public final class WidgetParkingBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnWidgetTtsToggle;
+      ImageView btnWidgetTtsToggle = ViewBindings.findChildViewById(rootView, id);
+      if (btnWidgetTtsToggle == null) {
+        break missingId;
+      }
+
       id = R.id.btnWidgetVoice;
       Button btnWidgetVoice = ViewBindings.findChildViewById(rootView, id);
       if (btnWidgetVoice == null) {
@@ -111,7 +122,8 @@ public final class WidgetParkingBinding implements ViewBinding {
       LinearLayout widgetContainer = (LinearLayout) rootView;
 
       return new WidgetParkingBinding((LinearLayout) rootView, btnWidgetFind, btnWidgetSave,
-          btnWidgetVoice, tvWidgetLocation, tvWidgetUpdateTime, widgetContainer);
+          btnWidgetTtsToggle, btnWidgetVoice, tvWidgetLocation, tvWidgetUpdateTime,
+          widgetContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

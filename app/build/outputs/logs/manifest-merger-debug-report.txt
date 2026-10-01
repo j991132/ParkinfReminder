@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:2:1-61:12
+ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:2:1-92:12
+INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:2:1-92:12
+INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:2:1-92:12
+INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:2:1-92:12
 MERGED from [androidx.databinding:viewbinding:8.13.2] C:\Users\user\.gradle\caches\9.3.0\transforms\7a500514355c680de5260d593695fca2\workspace\transformed\viewbinding-8.13.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\user\.gradle\caches\9.3.0\transforms\8058b7f31004be1c5ca9605ef05480ef\workspace\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\user\.gradle\caches\9.3.0\transforms\1830d6f70c4d9d21fb01896e438528bd\workspace\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -126,8 +126,8 @@ ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:14:13-72
 	android:name
 		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:14:21-69
 application
-ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:18:5-59:19
-INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:18:5-59:19
+ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:18:5-90:19
+INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:18:5-90:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\user\.gradle\caches\9.3.0\transforms\8058b7f31004be1c5ca9605ef05480ef\workspace\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\user\.gradle\caches\9.3.0\transforms\8058b7f31004be1c5ca9605ef05480ef\workspace\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\user\.gradle\caches\9.3.0\transforms\1830d6f70c4d9d21fb01896e438528bd\workspace\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -225,13 +225,13 @@ ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:37:9-43:39
 	android:name
 		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:38:13-50
 receiver#com.parking.reminder.widget.ParkingWidgetProvider
-ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:46:9-57:20
+ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:46:9-58:20
 	android:exported
 		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:48:13-36
 	android:name
 		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:47:13-57
-intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE+action:name:com.parking.reminder.ACTION_FIND_CAR+action:name:com.parking.reminder.ACTION_UPDATE_DATA
-ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:49:13-53:29
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE+action:name:com.parking.reminder.ACTION_FIND_CAR+action:name:com.parking.reminder.ACTION_TOGGLE_TTS+action:name:com.parking.reminder.ACTION_UPDATE_DATA
+ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:49:13-54:29
 action#android.appwidget.action.APPWIDGET_UPDATE
 ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:50:17-84
 	android:name
@@ -244,12 +244,28 @@ action#com.parking.reminder.ACTION_UPDATE_DATA
 ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:52:17-82
 	android:name
 		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:52:25-79
-meta-data#android.appwidget.provider
-ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:54:13-56:63
-	android:resource
-		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:56:17-60
+action#com.parking.reminder.ACTION_TOGGLE_TTS
+ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:53:17-81
 	android:name
-		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:55:17-58
+		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:53:25-78
+meta-data#android.appwidget.provider
+ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:55:13-57:63
+	android:resource
+		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:57:17-60
+	android:name
+		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:56:17-58
+receiver#com.parking.reminder.widget.ParkingWidgetProvider2x1
+ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:61:9-73:20
+	android:exported
+		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:63:13-36
+	android:name
+		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:62:13-60
+receiver#com.parking.reminder.widget.ParkingWidgetProvider1x2
+ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:76:9-88:20
+	android:exported
+		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:78:13-36
+	android:name
+		ADDED from D:\ParkingReminder\app\src\main\AndroidManifest.xml:77:13-60
 uses-sdk
 INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\ParkingReminder\app\src\main\AndroidManifest.xml

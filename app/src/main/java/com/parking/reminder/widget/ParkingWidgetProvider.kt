@@ -23,11 +23,14 @@ import java.util.Locale
 /**
  * 스마트폰 홈 화면 주차 위치 알림 위젯 Provider
  */
-class ParkingWidgetProvider : AppWidgetProvider() {
+open class ParkingWidgetProvider : AppWidgetProvider() {
+
+    open val layoutId: Int = R.layout.widget_parking
 
     companion object {
         const val ACTION_FIND_CAR = "com.parking.reminder.ACTION_FIND_CAR"
         const val ACTION_UPDATE_DATA = "com.parking.reminder.ACTION_UPDATE_DATA"
+        const val ACTION_TOGGLE_TTS = "com.parking.reminder.ACTION_TOGGLE_TTS"
         const val EXTRA_OPEN_SAVE = "extra_open_save"
         const val EXTRA_START_VOICE = "extra_start_voice"
         const val EXTRA_OPEN_FIND = "extra_open_find"
@@ -36,10 +39,15 @@ class ParkingWidgetProvider : AppWidgetProvider() {
          * 앱 내부에서 주차 정보가 변경되었을 때 위젯을 즉시 갱신하는 헬퍼 메서드
          */
         fun sendUpdateBroadcast(context: Context) {
-            val intent = Intent(context, ParkingWidgetProvider::class.java).apply {
+            context.sendBroadcast(Intent(context, ParkingWidgetProvider::class.java).apply {
                 action = ACTION_UPDATE_DATA
-            }
-            context.sendBroadcast(intent)
+            })
+            context.sendBroadcast(Intent(context, ParkingWidgetProvider2x1::class.java).apply {
+                action = ACTION_UPDATE_DATA
+            })
+            context.sendBroadcast(Intent(context, ParkingWidgetProvider1x2::class.java).apply {
+                action = ACTION_UPDATE_DATA
+            })
         }
     }
 
@@ -60,7 +68,7 @@ class ParkingWidgetProvider : AppWidgetProvider() {
                 // 위젯 화면 강제 갱신
                 val appWidgetManager = AppWidgetManager.getInstance(context)
                 val ids = appWidgetManager.getAppWidgetIds(
-                    ComponentName(context, ParkingWidgetProvider::class.java)
+                    ComponentName(context, this::class.java)
                 )
                 for (id in ids) {
                     val views = buildRemoteViews(context)
@@ -85,11 +93,23 @@ class ParkingWidgetProvider : AppWidgetProvider() {
                     speakText(context, message)
                 }
             }
+
+            ACTION_TOGGLE_TTS -> {
+                val preferences = ParkingPreferences(context)
+                val newStatus = !preferences.isTtsEnabled()
+                preferences.setTtsEnabled(newStatus)
+
+                val message = if (newStatus) "🔊 위젯: 음성 안내가 켜졌습니다." else "🔇 위젯: 음성 안내가 꺼졌습니다."
+                Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+
+                // 모든 크기 위젯 화면 강제 갱신
+                sendUpdateBroadcast(context)
+            }
         }
     }
 
-    private fun buildRemoteViews(context: Context): RemoteViews {
-        val views = RemoteViews(context.packageName, R.layout.widget_parking)
+    protected open fun buildRemoteViews(context: Context): RemoteViews {
+        val views = RemoteViews(context.packageName, layoutId)
         val preferences = ParkingPreferences(context)
         val location = preferences.getCurrentParking()
 
@@ -130,7 +150,18 @@ class ParkingWidgetProvider : AppWidgetProvider() {
         val findPendingIntent = PendingIntent.getBroadcast(context, 102, findIntent, flags)
         views.setOnClickPendingIntent(R.id.btnWidgetFind, findPendingIntent)
 
-        // 4. 위젯 몸통 탭 시 앱 메인 화면 열기
+        // 5. 음성 안내 ON/OFF 스피커 아이콘 바인딩
+        val isTtsEnabled = preferences.isTtsEnabled()
+        val ttsIconRes = if (isTtsEnabled) R.drawable.ic_volume_up else R.drawable.ic_volume_off
+        views.setImageViewResource(R.id.btnWidgetTtsToggle, ttsIconRes)
+
+        val toggleIntent = Intent(context, ParkingWidgetProvider::class.java).apply {
+            action = ACTION_TOGGLE_TTS
+        }
+        val togglePendingIntent = PendingIntent.getBroadcast(context, 104, toggleIntent, flags)
+        views.setOnClickPendingIntent(R.id.btnWidgetTtsToggle, togglePendingIntent)
+
+        // 6. 위젯 몸통 탭 시 앱 메인 화면 열기
         val mainIntent = Intent(context, MainActivity::class.java)
         val mainPendingIntent = PendingIntent.getActivity(context, 100, mainIntent, flags)
         views.setOnClickPendingIntent(R.id.widgetContainer, mainPendingIntent)

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="14dp">
 
-    <!-- 상단 헤더: 타이틀 & 새로고침 아이콘 -->
+    <!-- 상단 헤더: 타이틀, 저장시각 & 음성 안내 스피커 토글 버튼 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +18,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="🅿️ 현재 내 차 주차 위치"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/widget_title"
             android:textColor="#1E88E5"
             android:textSize="13sp"
             android:textStyle="bold" />
@@ -27,9 +30,18 @@
             android:id="@+id/tvWidgetUpdateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
             android:text="방금 전"
             android:textColor="#757575"
             android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/btnWidgetTtsToggle"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="@string/cd_tts_toggle"
+            android:padding="2dp"
+            android:src="@drawable/ic_volume_up" />
     </LinearLayout>
 
     <!-- 중앙: 현재 주차 위치 결과 디스플레이 -->

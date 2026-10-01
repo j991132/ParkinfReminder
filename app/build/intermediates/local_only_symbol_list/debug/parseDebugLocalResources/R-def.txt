@@ -41,6 +41,7 @@ id btnTtsToggle
 id btnVoiceInput
 id btnWidgetFind
 id btnWidgetSave
+id btnWidgetTtsToggle
 id btnWidgetVoice
 id cardCurrentLocation
 id cardHistoryItem
@@ -75,6 +76,8 @@ layout item_parking_history
 layout spinner_dropdown_item
 layout spinner_item
 layout widget_parking
+layout widget_parking_1x2
+layout widget_parking_2x1
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
@@ -112,6 +115,9 @@ string voice_listening
 string voice_overlay_desc
 string voice_overlay_title
 string widget_btn_voice
+string widget_title
 style Theme.ParkingReminder
 style Theme.ParkingReminder.Translucent
 xml parking_widget_info
+xml parking_widget_info_1x2
+xml parking_widget_info_2x1

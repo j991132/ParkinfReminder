@@ -3367,6 +3367,7 @@ id btnTtsToggle
 id btnVoiceInput
 id btnWidgetFind
 id btnWidgetSave
+id btnWidgetTtsToggle
 id btnWidgetVoice
 id buttonPanel
 id cache_measures
@@ -4037,6 +4038,8 @@ layout spinner_dropdown_item
 layout spinner_item
 layout support_simple_spinner_dropdown_item
 layout widget_parking
+layout widget_parking_1x2
+layout widget_parking_2x1
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -4273,6 +4276,7 @@ string voice_listening
 string voice_overlay_desc
 string voice_overlay_title
 string widget_btn_voice
+string widget_title
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -5611,3 +5615,5 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml image_share_filepaths
 xml parking_widget_info
+xml parking_widget_info_1x2
+xml parking_widget_info_2x1

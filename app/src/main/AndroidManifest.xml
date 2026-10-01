@@ -42,7 +42,7 @@
             android:noHistory="true"
             android:taskAffinity="" />
 
-        <!-- 스마트폰 홈 화면 주차 위젯 리시버 -->
+        <!-- 스마트폰 홈 화면 주차 위젯 (4x2 기본) -->
         <receiver
             android:name=".widget.ParkingWidgetProvider"
             android:exported="true">
@@ -50,10 +50,41 @@
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="com.parking.reminder.ACTION_FIND_CAR" />
                 <action android:name="com.parking.reminder.ACTION_UPDATE_DATA" />
+                <action android:name="com.parking.reminder.ACTION_TOGGLE_TTS" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/parking_widget_info" />
+        </receiver>
+
+        <!-- 스마트폰 홈 화면 주차 위젯 (2x1 가로 컴팩트) -->
+        <receiver
+            android:name=".widget.ParkingWidgetProvider2x1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.parking.reminder.ACTION_FIND_CAR" />
+                <action android:name="com.parking.reminder.ACTION_UPDATE_DATA" />
+                <action android:name="com.parking.reminder.ACTION_TOGGLE_TTS" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/parking_widget_info_2x1" />
+        </receiver>
+
+        <!-- 스마트폰 홈 화면 주차 위젯 (1x2 세로 슬림) -->
+        <receiver
+            android:name=".widget.ParkingWidgetProvider1x2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.parking.reminder.ACTION_FIND_CAR" />
+                <action android:name="com.parking.reminder.ACTION_UPDATE_DATA" />
+                <action android:name="com.parking.reminder.ACTION_TOGGLE_TTS" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/parking_widget_info_1x2" />
         </receiver>
 
     </application>
