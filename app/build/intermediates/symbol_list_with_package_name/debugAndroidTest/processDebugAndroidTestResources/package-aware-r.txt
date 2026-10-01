@@ -1,0 +1,3 @@
+com.parking.reminder.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

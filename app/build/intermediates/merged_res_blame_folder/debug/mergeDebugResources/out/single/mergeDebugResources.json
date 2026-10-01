@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_ic_car.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\ic_car.xml"
+    },
+    {
+        "merged": "com.parking.reminder.app-debug-49:/drawable_ic_volume_off.xml.flat",
+        "source": "com.parking.reminder.app-main-51:/drawable/ic_volume_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\mipmap_ic_launcher.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\mipmap\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\layout_spinner_dropdown_item.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\layout_widget_parking.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\widget_parking.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\layout_spinner_item.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\layout_item_parking_history.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\item_parking_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\layout_activity_voice_input.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\activity_voice_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_ic_save.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\ic_save.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_bg_widget.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\bg_widget.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\layout_dialog_family_share.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\dialog_family_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_bg_widget_btn_voice.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\bg_widget_btn_voice.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_bg_widget_btn_primary.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\bg_widget_btn_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_bg_widget_btn_accent.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\bg_widget_btn_accent.xml"
+    },
+    {
+        "merged": "com.parking.reminder.app-debug-49:/drawable_ic_volume_up.xml.flat",
+        "source": "com.parking.reminder.app-main-51:/drawable/ic_volume_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\xml_parking_widget_info.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\xml\\parking_widget_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.parking.reminder.app-debug-49:/layout_activity_main.xml.flat",
+        "source": "com.parking.reminder.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_bg_spinner.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\bg_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\layout_dialog_edit_parking.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\layout\\dialog_edit_parking.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\mipmap_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\mipmap\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_ic_mic.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\ic_mic.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-debug-49:\\drawable_ic_group.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.3.0\\com.parking.reminder.app-main-51:\\drawable\\ic_group.xml"
+    }
+]

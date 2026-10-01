@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="parking_floors">
+        <item>지하 6층 (B6)</item>
+        <item>지하 5층 (B5)</item>
+        <item>지하 4층 (B4)</item>
+        <item>지하 3층 (B3)</item>
+        <item>지하 2층 (B2)</item>
+        <item>지하 1층 (B1)</item>
+        <item>지상 1층 (1F)</item>
+        <item>지상 2층 (2F)</item>
+        <item>지상 3층 (3F)</item>
+        <item>지상 4층 (4F)</item>
+        <item>지상 5층 (5F)</item>
+        <item>지상 6층 (6F)</item>
+        <item>지상 7층 (7F)</item>
+        <item>지상 8층 (8F)</item>
+        <item>지상 9층 (9F)</item>
+        <item>지상 10층 (10F)</item>
+    </string-array>
+    <color name="accent">#FF9800</color>
+    <color name="background">#F5F7FB</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="dark_red">#B71C1C</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="ic_launcher_background">#1E88E5</color>
+    <color name="mic_active">#E53935</color>
+    <color name="primary">#1E88E5</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="success">#4CAF50</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">주차 위치 알림이</string>
+    <string name="btn_cancel">취소</string>
+    <string name="btn_create_group">새 그룹 생성</string>
+    <string name="btn_find_my_car">내 차 찾기</string>
+    <string name="btn_join_group">그룹 참여</string>
+    <string name="btn_save_location">위치 저장하기</string>
+    <string name="btn_voice_input">음성으로 입력</string>
+    <string name="cd_mic">마이크 아이콘</string>
+    <string name="cd_tts_toggle">음성 안내 설정</string>
+    <string name="dialog_close">확인</string>
+    <string name="dialog_find_car_empty">저장된 주차 위치 정보가 없습니다.\n주차 위치를 먼저 등록해 주세요.</string>
+    <string name="dialog_find_car_format">층수: %1$s\n기둥 번호: %2$s\n저장 시각: %3$s</string>
+    <string name="dialog_find_car_title">내 차 주차 위치</string>
+    <string name="family_group_id_hint">가족 그룹 코드 입력</string>
+    <string name="gcm_defaultSenderId" translatable="false">317693831470</string>
+    <string name="google_api_key" translatable="false">AIzaSyBRBrH4rnTRprT8MyHQ_7tlgIA2XITc1vA</string>
+    <string name="google_app_id" translatable="false">1:317693831470:android:348ed4c3d8c46d68c9b2bf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBRBrH4rnTRprT8MyHQ_7tlgIA2XITc1vA</string>
+    <string name="google_storage_bucket" translatable="false">parkingreminder-18430.firebasestorage.app</string>
+    <string name="hint_pillar_number">기둥 번호 입력 (예: A12, 05)</string>
+    <string name="label_select_floor">주차 층수 선택</string>
+    <string name="project_id" translatable="false">parkingreminder-18430</string>
+    <string name="title_family_share">가족 공유 그룹</string>
+    <string name="title_history">주차 기록 (히스토리)</string>
+    <string name="title_parking_input">주차 위치 등록</string>
+    <string name="toast_swipe_delete">주차 기록이 삭제되었습니다.</string>
+    <string name="toast_tts_off">음성 안내 기능이 꺼졌습니다.</string>
+    <string name="toast_tts_on">음성 안내 기능이 켜졌습니다.</string>
+    <string name="tts_find_car_info">현재 주차 위치는 %1$s %2$s입니다.</string>
+    <string name="tts_no_location">저장된 주차 위치가 없습니다.</string>
+    <string name="tts_save_success">%1$s %2$s에 주차 위치가 저장되었습니다.</string>
+    <string name="voice_listening">말씀해 주세요... (예: 지하 2층 A기둥)</string>
+    <string name="voice_overlay_desc">주차 위치를 말씀해 주세요\n(예: 지하 2층 A기둥)</string>
+    <string name="voice_overlay_title">🔴 음성 입력 중...</string>
+    <string name="widget_btn_voice">🎤 음성 입력</string>
+    <style name="Theme.ParkingReminder" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/accent</item>
+        
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">false</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    <style name="Theme.ParkingReminder.Translucent" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+</resources>

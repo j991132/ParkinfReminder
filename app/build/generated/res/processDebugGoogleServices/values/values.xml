@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">317693831470</string>
+    <string name="google_api_key" translatable="false">AIzaSyBRBrH4rnTRprT8MyHQ_7tlgIA2XITc1vA</string>
+    <string name="google_app_id" translatable="false">1:317693831470:android:348ed4c3d8c46d68c9b2bf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBRBrH4rnTRprT8MyHQ_7tlgIA2XITc1vA</string>
+    <string name="google_storage_bucket" translatable="false">parkingreminder-18430.firebasestorage.app</string>
+    <string name="project_id" translatable="false">parkingreminder-18430</string>
+</resources>

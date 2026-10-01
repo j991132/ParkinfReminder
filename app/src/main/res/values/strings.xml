@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">주차 위치 알림이</string>
+
+    <!-- 입력 라벨 및 힌트 -->
+    <string name="title_parking_input">주차 위치 등록</string>
+    <string name="label_select_floor">주차 층수 선택</string>
+    <string name="hint_pillar_number">기둥 번호 입력 (예: A12, 05)</string>
+    <string name="btn_save_location">위치 저장하기</string>
+    <string name="btn_find_my_car">내 차 찾기</string>
+    <string name="btn_voice_input">음성으로 입력</string>
+    <string name="widget_btn_voice">🎤 음성 입력</string>
+    <string name="voice_listening">말씀해 주세요... (예: 지하 2층 A기둥)</string>
+    <string name="voice_overlay_title">🔴 음성 입력 중...</string>
+    <string name="voice_overlay_desc">주차 위치를 말씀해 주세요\n(예: 지하 2층 A기둥)</string>
+    <string name="btn_cancel">취소</string>
+    <string name="cd_mic">마이크 아이콘</string>
+    <string name="cd_tts_toggle">음성 안내 설정</string>
+    <string name="toast_tts_on">음성 안내 기능이 켜졌습니다.</string>
+    <string name="toast_tts_off">음성 안내 기능이 꺼졌습니다.</string>
+
+    <!-- 내 차 찾기 다이얼로그 -->
+    <string name="dialog_find_car_title">내 차 주차 위치</string>
+    <string name="dialog_find_car_empty">저장된 주차 위치 정보가 없습니다.\n주차 위치를 먼저 등록해 주세요.</string>
+    <string name="dialog_find_car_format">층수: %1$s\n기둥 번호: %2$s\n저장 시각: %3$s</string>
+    <string name="dialog_close">확인</string>
+
+    <!-- TTS 음성 안내 템플릿 -->
+    <string name="tts_save_success">%1$s %2$s에 주차 위치가 저장되었습니다.</string>
+    <string name="tts_find_car_info">현재 주차 위치는 %1$s %2$s입니다.</string>
+    <string name="tts_no_location">저장된 주차 위치가 없습니다.</string>
+
+    <!-- 히스토리 & 가족 공유 -->
+    <string name="title_history">주차 기록 (히스토리)</string>
+    <string name="title_family_share">가족 공유 그룹</string>
+    <string name="family_group_id_hint">가족 그룹 코드 입력</string>
+    <string name="btn_join_group">그룹 참여</string>
+    <string name="btn_create_group">새 그룹 생성</string>
+    <string name="toast_swipe_delete">주차 기록이 삭제되었습니다.</string>
+</resources>

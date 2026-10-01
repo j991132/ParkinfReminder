@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- B6층부터 지상 10층까지 층수 리스트 -->
+    <string-array name="parking_floors">
+        <item>지하 6층 (B6)</item>
+        <item>지하 5층 (B5)</item>
+        <item>지하 4층 (B4)</item>
+        <item>지하 3층 (B3)</item>
+        <item>지하 2층 (B2)</item>
+        <item>지하 1층 (B1)</item>
+        <item>지상 1층 (1F)</item>
+        <item>지상 2층 (2F)</item>
+        <item>지상 3층 (3F)</item>
+        <item>지상 4층 (4F)</item>
+        <item>지상 5층 (5F)</item>
+        <item>지상 6층 (6F)</item>
+        <item>지상 7층 (7F)</item>
+        <item>지상 8층 (8F)</item>
+        <item>지상 9층 (9F)</item>
+        <item>지상 10층 (10F)</item>
+    </string-array>
+</resources>
