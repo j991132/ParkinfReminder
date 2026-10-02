@@ -1,6 +1,0 @@
-com.parking.reminder.test.app-core-1.6.1-0 C:\Users\user\.gradle\caches\9.3.0\transforms\6932546d3ceb4af3e20006b183e3627c\workspace\transformed\core-1.6.1\res
-com.parking.reminder.test.app-androidTest-1 D:\ParkingReminder\app\build\generated\res\resValues\androidTest\debug
-com.parking.reminder.test.app-updated_navigation_xml-2 D:\ParkingReminder\app\build\generated\updated_navigation_xml\debugAndroidTest
-com.parking.reminder.test.app-mergeDebugAndroidTestResources-3 D:\ParkingReminder\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.parking.reminder.test.app-mergeDebugAndroidTestResources-4 D:\ParkingReminder\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.parking.reminder.test.app-debugAndroidTest-5 D:\ParkingReminder\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

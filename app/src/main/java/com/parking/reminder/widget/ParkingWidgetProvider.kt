@@ -6,7 +6,6 @@ import android.appwidget.AppWidgetProvider
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -122,11 +121,7 @@ open class ParkingWidgetProvider : AppWidgetProvider() {
             views.setTextViewText(R.id.tvWidgetUpdateTime, "")
         }
 
-        val flags = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
-        } else {
-            PendingIntent.FLAG_UPDATE_CURRENT
-        }
+        val flags = PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
 
         // 2. '위치 저장' 버튼: 누르면 즉시 앱의 위치 입력 화면으로 이동
         val saveIntent = Intent(context, MainActivity::class.java).apply {
@@ -178,6 +173,8 @@ open class ParkingWidgetProvider : AppWidgetProvider() {
         tts = TextToSpeech(context.applicationContext) { status ->
             if (status == TextToSpeech.SUCCESS) {
                 tts?.language = Locale.KOREAN
+                tts?.setSpeechRate(1.0f) // 최신 기기(Galaxy S25 등)에서 위젯 TTS 속도가 지나치게 빠른 현상 방지
+                tts?.setPitch(1.0f)
                 tts?.setOnUtteranceProgressListener(object : UtteranceProgressListener() {
                     override fun onStart(utteranceId: String?) {}
                     override fun onDone(utteranceId: String?) {
