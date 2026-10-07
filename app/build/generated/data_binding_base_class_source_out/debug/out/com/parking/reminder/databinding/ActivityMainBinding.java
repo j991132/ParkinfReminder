@@ -29,6 +29,9 @@ public final class ActivityMainBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
+  public final FloatingActionButton btnCameraInput;
+
+  @NonNull
   public final ImageButton btnFamilyGroup;
 
   @NonNull
@@ -74,14 +77,16 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvVoiceHint;
 
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull ImageButton btnFamilyGroup, @NonNull MaterialButton btnFindMyCar,
-      @NonNull MaterialButton btnSaveLocation, @NonNull ImageButton btnTtsToggle,
-      @NonNull FloatingActionButton btnVoiceInput, @NonNull MaterialCardView cardCurrentLocation,
-      @NonNull TextInputEditText etPillar, @NonNull RecyclerView rvParkingHistory,
-      @NonNull Spinner spinnerFloor, @NonNull TextInputLayout tilPillar, @NonNull Toolbar toolbar,
+      @NonNull FloatingActionButton btnCameraInput, @NonNull ImageButton btnFamilyGroup,
+      @NonNull MaterialButton btnFindMyCar, @NonNull MaterialButton btnSaveLocation,
+      @NonNull ImageButton btnTtsToggle, @NonNull FloatingActionButton btnVoiceInput,
+      @NonNull MaterialCardView cardCurrentLocation, @NonNull TextInputEditText etPillar,
+      @NonNull RecyclerView rvParkingHistory, @NonNull Spinner spinnerFloor,
+      @NonNull TextInputLayout tilPillar, @NonNull Toolbar toolbar,
       @NonNull TextView tvCurrentParkingDisplay, @NonNull TextView tvCurrentUpdateTime,
       @NonNull TextView tvEmptyHistory, @NonNull TextView tvVoiceHint) {
     this.rootView = rootView;
+    this.btnCameraInput = btnCameraInput;
     this.btnFamilyGroup = btnFamilyGroup;
     this.btnFindMyCar = btnFindMyCar;
     this.btnSaveLocation = btnSaveLocation;
@@ -126,6 +131,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnCameraInput;
+      FloatingActionButton btnCameraInput = ViewBindings.findChildViewById(rootView, id);
+      if (btnCameraInput == null) {
+        break missingId;
+      }
+
       id = R.id.btnFamilyGroup;
       ImageButton btnFamilyGroup = ViewBindings.findChildViewById(rootView, id);
       if (btnFamilyGroup == null) {
@@ -216,8 +227,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, btnFamilyGroup, btnFindMyCar,
-          btnSaveLocation, btnTtsToggle, btnVoiceInput, cardCurrentLocation, etPillar,
+      return new ActivityMainBinding((CoordinatorLayout) rootView, btnCameraInput, btnFamilyGroup,
+          btnFindMyCar, btnSaveLocation, btnTtsToggle, btnVoiceInput, cardCurrentLocation, etPillar,
           rvParkingHistory, spinnerFloor, tilPillar, toolbar, tvCurrentParkingDisplay,
           tvCurrentUpdateTime, tvEmptyHistory, tvVoiceHint);
     }

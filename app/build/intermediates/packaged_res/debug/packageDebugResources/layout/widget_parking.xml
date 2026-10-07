@@ -60,7 +60,7 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <!-- 하단: 위치 저장 / 음성 입력 / 내 차 찾기 액션 버튼 -->
+    <!-- 하단: 위치 저장 / 카메라 스캔 / 음성 입력 / 내 차 찾기 액션 버튼 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="38dp"
@@ -70,39 +70,52 @@
             android:id="@+id/btnWidgetSave"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="2dp"
+            android:layout_marginEnd="1dp"
             android:layout_weight="1"
             android:background="@drawable/bg_widget_btn_primary"
-            android:paddingHorizontal="2dp"
+            android:paddingHorizontal="1dp"
             android:text="위치 저장"
             android:textColor="#FFFFFF"
-            android:textSize="12sp"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnWidgetCamera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_widget_btn_camera"
+            android:paddingHorizontal="1dp"
+            android:text="📷 스캔"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnWidgetVoice"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="2dp"
+            android:layout_marginHorizontal="1dp"
             android:layout_weight="1"
             android:background="@drawable/bg_widget_btn_voice"
-            android:paddingHorizontal="2dp"
+            android:paddingHorizontal="1dp"
             android:text="@string/widget_btn_voice"
             android:textColor="#FFFFFF"
-            android:textSize="12sp"
+            android:textSize="11sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnWidgetFind"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
+            android:layout_marginStart="1dp"
             android:layout_weight="1"
             android:background="@drawable/bg_widget_btn_accent"
-            android:paddingHorizontal="2dp"
+            android:paddingHorizontal="1dp"
             android:text="내 차 찾기"
             android:textColor="#FFFFFF"
-            android:textSize="12sp"
+            android:textSize="11sp"
             android:textStyle="bold" />
 
     </LinearLayout>

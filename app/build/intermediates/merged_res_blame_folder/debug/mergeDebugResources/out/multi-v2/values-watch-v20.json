@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.parking.reminder.app-mergeDebugResources-47:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.parking.reminder.app-mergeDebugResources-52:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\user\\.gradle\\caches\\9.3.0\\transforms\\2e1e0b9c5410d91e3ec34f233910427c\\workspace\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",

@@ -16,6 +16,7 @@ import android.widget.Toast
 import com.parking.reminder.MainActivity
 import com.parking.reminder.R
 import com.parking.reminder.data.ParkingPreferences
+import com.parking.reminder.ui.CameraScanActivity
 import com.parking.reminder.ui.VoiceInputActivity
 import java.util.Locale
 
@@ -131,7 +132,14 @@ open class ParkingWidgetProvider : AppWidgetProvider() {
         val savePendingIntent = PendingIntent.getActivity(context, 101, saveIntent, flags)
         views.setOnClickPendingIntent(R.id.btnWidgetSave, savePendingIntent)
 
-        // 3. '음성 입력' 버튼: 누르면 메인 앱으로 이동하지 않고 플로팅 음성 인식 팝업 바로 실행
+        // 3. '카메라 스캔' 버튼: 누르면 메인 앱으로 이동하지 않고 플로팅 카메라 OCR 팝업 바로 실행
+        val cameraIntent = Intent(context, CameraScanActivity::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        }
+        val cameraPendingIntent = PendingIntent.getActivity(context, 105, cameraIntent, flags)
+        views.setOnClickPendingIntent(R.id.btnWidgetCamera, cameraPendingIntent)
+
+        // 4. '음성 입력' 버튼: 누르면 메인 앱으로 이동하지 않고 플로팅 음성 인식 팝업 바로 실행
         val voiceIntent = Intent(context, VoiceInputActivity::class.java).apply {
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
         }

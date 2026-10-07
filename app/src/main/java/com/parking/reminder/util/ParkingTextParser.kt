@@ -60,8 +60,8 @@ object ParkingTextParser {
             }
         }
 
-        // 지상 N층 패턴 (예: "지상 3층", "지상 삼층", "3층", "삼층", "지상10층", "10층")
-        val groundRegex = "(?:지상\\s*)?([1-9]|10|일|이|삼|사|오|육|칠|팔|구|십)\\s*층".toRegex()
+        // 지상 N층 패턴 (예: "지상 3층", "지상 삼층", "3층", "삼층", "지상10층", "10층", "2F", "3F")
+        val groundRegex = "(?:지상\\s*)?([1-9]|10|일|이|삼|사|오|육|칠|팔|구|십)\\s*(?:층|[fF])".toRegex()
         val groundMatch = groundRegex.find(text)
         if (groundMatch != null) {
             val numStr = groundMatch.groupValues[1]
@@ -94,6 +94,7 @@ object ParkingTextParser {
 
     private fun extractPillar(text: String): String {
         var clean = text
+            .replace("[-:=,#/\n\r]+".toRegex(), " ") // 특수문자 및 줄바꿈 공백화
             // "기둥", "번", "구역", "라인", "에", "의", "주차" 등 불필요한 단어/조사 제거
             .replace("(기둥|번|구역|라인|자리|에|의|주차)".toRegex(), " ")
             .trim()

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.parking.reminder.app-mergeDebugResources-47:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.parking.reminder.app-mergeDebugResources-52:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\user\\.gradle\\caches\\9.3.0\\transforms\\360c58bc27ab91284a21a39db6c395f6\\workspace\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",

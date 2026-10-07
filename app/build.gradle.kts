@@ -13,8 +13,8 @@ android {
         applicationId = "com.parking.reminder"
         minSdk = 26
         targetSdk = 36
-        versionCode = 3
-        versionName = "1.1"
+        versionCode = 4
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -63,6 +63,15 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("com.google.firebase:firebase-auth-ktx")
+
+    // CameraX & ML Kit Text Recognition (카메라 층/기둥 텍스트 자동 인식)
+    val cameraVersion = "1.3.4"
+    implementation("androidx.camera:camera-core:$cameraVersion")
+    implementation("androidx.camera:camera-camera2:$cameraVersion")
+    implementation("androidx.camera:camera-lifecycle:$cameraVersion")
+    implementation("androidx.camera:camera-view:$cameraVersion")
+    implementation("com.google.mlkit:text-recognition:16.0.1")
+    implementation("com.google.guava:guava:31.1-android")
 
     // Test
     testImplementation("junit:junit:4.13.2")

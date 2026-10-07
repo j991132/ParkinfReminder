@@ -75,7 +75,8 @@
         
         <item name="colorSecondary">@color/accent</item>
         
-        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar" ns1:targetApi="m">false</item>
         <item name="android:windowBackground">@color/background</item>
     </style>

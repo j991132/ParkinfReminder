@@ -15,11 +15,14 @@ import android.widget.ImageButton
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -33,6 +36,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.parking.reminder.data.ParkingPreferences
 import com.parking.reminder.databinding.ActivityMainBinding
 import com.parking.reminder.model.ParkingLocation
+import com.parking.reminder.ui.CameraScanActivity
 import com.parking.reminder.ui.MainViewModel
 import com.parking.reminder.ui.ParkingHistoryAdapter
 import com.parking.reminder.ui.SwipeToDeleteCallback
@@ -61,8 +65,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
         speechManager = SpeechManager(this)
         preferences = ParkingPreferences(this)
@@ -131,6 +142,11 @@ class MainActivity : AppCompatActivity() {
         // 음성 마이크 버튼
         binding.btnVoiceInput.setOnClickListener {
             checkAndRequestAudioPermission()
+        }
+
+        // 카메라 스캔 버튼
+        binding.btnCameraInput.setOnClickListener {
+            startActivity(Intent(this, CameraScanActivity::class.java))
         }
 
         // 음성 읽어주기 (TTS) 토글 버튼

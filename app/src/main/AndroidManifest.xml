@@ -5,8 +5,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <!-- 음성 인식(STT) 마이크 권한 -->
+    <!-- 음성 인식(STT) 마이크 권한 및 카메라 권한 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
 
     <!-- Android 11(API 30) 이상 SpeechRecognizer 패키지 가시성 선언 -->
     <queries>
@@ -36,6 +38,15 @@
         <!-- 위젯 음성 입력 전용 반투명 플로팅 액티비티 -->
         <activity
             android:name=".ui.VoiceInputActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ParkingReminder.Translucent"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:taskAffinity="" />
+
+        <!-- 위젯/앱 카메라 OCR 자동 인식 전용 반투명 플로팅 액티비티 -->
+        <activity
+            android:name=".ui.CameraScanActivity"
             android:exported="false"
             android:theme="@style/Theme.ParkingReminder.Translucent"
             android:excludeFromRecents="true"

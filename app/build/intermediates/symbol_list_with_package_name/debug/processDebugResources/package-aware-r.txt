@@ -675,6 +675,7 @@ attr imagePanX
 attr imagePanY
 attr imageRotate
 attr imageZoom
+attr implementationMode
 attr indeterminateAnimationType
 attr indeterminateProgressStyle
 attr indicatorColor
@@ -1063,6 +1064,7 @@ attr round
 attr roundPercent
 attr saturation
 attr scaleFromTextSize
+attr scaleType
 attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
@@ -3104,6 +3106,7 @@ drawable avd_show_password
 drawable bg_spinner
 drawable bg_widget
 drawable bg_widget_btn_accent
+drawable bg_widget_btn_camera
 drawable bg_widget_btn_primary
 drawable bg_widget_btn_voice
 drawable btn_checkbox_checked_mtrl
@@ -3148,6 +3151,7 @@ drawable ic_call_answer_video
 drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
+drawable ic_camera
 drawable ic_car
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -3353,10 +3357,14 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnCameraInput
 id btnCancelVoice
+id btnCloseCamera
+id btnConfirmSave
 id btnCopyGroupId
 id btnCreateNewGroup
 id btnDeleteHistory
+id btnEditRecognized
 id btnFamilyGroup
 id btnFindMyCar
 id btnJoinGroup
@@ -3365,6 +3373,7 @@ id btnSaveLocation
 id btnShareInvite
 id btnTtsToggle
 id btnVoiceInput
+id btnWidgetCamera
 id btnWidgetFind
 id btnWidgetSave
 id btnWidgetTtsToggle
@@ -3394,6 +3403,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id compatible
 id compress
 id confirm_button
 id constraint
@@ -3463,6 +3473,9 @@ id expand_activities_button
 id expanded_menu
 id fade
 id fill
+id fillCenter
+id fillEnd
+id fillStart
 id fill_horizontal
 id fill_vertical
 id filled
@@ -3635,6 +3648,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id performance
 id pin
 id pooling_container_listener_holder_tag
 id position
@@ -3643,6 +3657,7 @@ id preferences_detail
 id preferences_header
 id preferences_sliding_pane_layout
 id pressed
+id previewView
 id progress_circular
 id progress_horizontal
 id radio
@@ -3777,12 +3792,17 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvCameraTitle
 id tvCurrentGroupId
 id tvCurrentParkingDisplay
 id tvCurrentUpdateTime
 id tvEmptyHistory
 id tvFloorBadge
 id tvPillarNumber
+id tvRawText
+id tvRecognizedFloor
+id tvRecognizedPillar
+id tvScanStatus
 id tvTimestamp
 id tvVoiceHint
 id tvVoiceStatusDesc
@@ -3931,6 +3951,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_camera_scan
 layout activity_main
 layout activity_voice_input
 layout browser_actions_context_menu_page
@@ -5566,6 +5587,7 @@ styleable PreferenceFragmentCompat android_layout android_divider android_divide
 styleable PreferenceGroup android_orderingFromXml initialExpandedChildrenCount orderingFromXml
 styleable PreferenceImageView android_maxWidth android_maxHeight maxHeight maxWidth
 styleable PreferenceTheme checkBoxPreferenceStyle dialogPreferenceStyle dropdownPreferenceStyle editTextPreferenceStyle preferenceCategoryStyle preferenceCategoryTitleTextAppearance preferenceCategoryTitleTextColor preferenceFragmentCompatStyle preferenceFragmentListStyle preferenceFragmentStyle preferenceInformationStyle preferenceScreenStyle preferenceStyle preferenceTheme seekBarPreferenceStyle switchPreferenceCompatStyle switchPreferenceStyle
+styleable PreviewView implementationMode scaleType
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
 styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values

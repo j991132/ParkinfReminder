@@ -22,6 +22,9 @@ public final class WidgetParkingBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button btnWidgetCamera;
+
+  @NonNull
   public final Button btnWidgetFind;
 
   @NonNull
@@ -42,11 +45,13 @@ public final class WidgetParkingBinding implements ViewBinding {
   @NonNull
   public final LinearLayout widgetContainer;
 
-  private WidgetParkingBinding(@NonNull LinearLayout rootView, @NonNull Button btnWidgetFind,
-      @NonNull Button btnWidgetSave, @NonNull ImageView btnWidgetTtsToggle,
-      @NonNull Button btnWidgetVoice, @NonNull TextView tvWidgetLocation,
-      @NonNull TextView tvWidgetUpdateTime, @NonNull LinearLayout widgetContainer) {
+  private WidgetParkingBinding(@NonNull LinearLayout rootView, @NonNull Button btnWidgetCamera,
+      @NonNull Button btnWidgetFind, @NonNull Button btnWidgetSave,
+      @NonNull ImageView btnWidgetTtsToggle, @NonNull Button btnWidgetVoice,
+      @NonNull TextView tvWidgetLocation, @NonNull TextView tvWidgetUpdateTime,
+      @NonNull LinearLayout widgetContainer) {
     this.rootView = rootView;
+    this.btnWidgetCamera = btnWidgetCamera;
     this.btnWidgetFind = btnWidgetFind;
     this.btnWidgetSave = btnWidgetSave;
     this.btnWidgetTtsToggle = btnWidgetTtsToggle;
@@ -83,6 +88,12 @@ public final class WidgetParkingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnWidgetCamera;
+      Button btnWidgetCamera = ViewBindings.findChildViewById(rootView, id);
+      if (btnWidgetCamera == null) {
+        break missingId;
+      }
+
       id = R.id.btnWidgetFind;
       Button btnWidgetFind = ViewBindings.findChildViewById(rootView, id);
       if (btnWidgetFind == null) {
@@ -121,8 +132,8 @@ public final class WidgetParkingBinding implements ViewBinding {
 
       LinearLayout widgetContainer = (LinearLayout) rootView;
 
-      return new WidgetParkingBinding((LinearLayout) rootView, btnWidgetFind, btnWidgetSave,
-          btnWidgetTtsToggle, btnWidgetVoice, tvWidgetLocation, tvWidgetUpdateTime,
+      return new WidgetParkingBinding((LinearLayout) rootView, btnWidgetCamera, btnWidgetFind,
+          btnWidgetSave, btnWidgetTtsToggle, btnWidgetVoice, tvWidgetLocation, tvWidgetUpdateTime,
           widgetContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);

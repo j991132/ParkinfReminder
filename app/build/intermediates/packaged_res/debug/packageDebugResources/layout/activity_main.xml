@@ -238,7 +238,7 @@
                             android:id="@+id/btnVoiceInput"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="12dp"
+                            android:layout_marginStart="8dp"
                             android:contentDescription="@string/btn_voice_input"
                             app:backgroundTint="@color/primary"
                             app:elevation="2dp"
@@ -246,15 +246,28 @@
                             app:srcCompat="@drawable/ic_mic"
                             app:tint="@color/white" />
 
+                        <!-- 카메라 텍스트 인식 (OCR) 버튼 -->
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btnCameraInput"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:contentDescription="카메라 스캔"
+                            app:backgroundTint="#37474F"
+                            app:elevation="2dp"
+                            app:fabSize="normal"
+                            app:srcCompat="@drawable/ic_camera"
+                            app:tint="@color/white" />
+
                     </LinearLayout>
 
-                    <!-- 음성 안내 힌트 문구 -->
+                    <!-- 음성/카메라 안내 힌트 문구 -->
                     <TextView
                         android:id="@+id/tvVoiceHint"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
-                        android:text="💡 마이크를 누르고 '지하 2층 A기둥'처럼 말해보세요"
+                        android:text="💡 마이크로 말하거나 📷 버튼을 눌러 기둥을 비춰보세요"
                         android:textColor="@color/text_secondary"
                         android:textSize="12sp" />
 
